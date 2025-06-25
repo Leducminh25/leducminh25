@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Đăng Ký</title>
+    <style>
+        body {
+            background-color: #dff0f3;
+            font-family: Arial;
+        }
+        h2 {
+            color: black;
+        }
+        table {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        td {
+            padding: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 200px;
+        }
+        textarea {
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Các điều khiển cơ bản với form</h2>
+
+    <form>
+        <table>
+            <tr>
+                <th colspan="2" align="center"><b>Thông tin đăng ký</b></th>
+            </tr>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" placeholder="Nhập họ và tên"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" name="gender" checked> Nam
+                    <input type="radio" name="gender"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" placeholder="dd/mm/yyyy"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Khóa đăng ký:</td>
+                <td>
+                    <input type="checkbox"> Tiếng Anh
+                    <input type="checkbox"> Tiếng Trung
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn học kỳ:</td>
+                <td>
+                    <select>
+                        <option>--Chọn học kỳ--</option>
+                        <option>Học kỳ 1</option>
+                        <option>Học kỳ 2</option>
+                        <option>Học kỳ hè</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tên sử dụng:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Gõ lại mật khẩu:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Ghi chú:</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Chấp nhận">
+                    <input type="reset" value="Hủy bỏ">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
